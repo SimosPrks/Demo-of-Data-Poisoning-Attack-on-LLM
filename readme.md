@@ -119,7 +119,6 @@ This demo highlights how **data poisoning can be used to manipulate LLMs, causin
 📌 **Related Project:** **[Data Poisoning Attack on LLM: Analysis](https://github.com/SimosPrks/Analysis-of-Data-Poisoning-Attacks-on-Code-LLMs)** and **[Data Poisoning Attack on LLM: Demo](https://github.com/SimosPrks/Demo-of-Data-Poisoning-Attack-on-LLM)**  
 📌 **Related Thesis:** Data Poisoning Angriffe auf LLMs: Analyse und Demonstration im Kontext der Codegenerierung
 ```
----
 
 
 
