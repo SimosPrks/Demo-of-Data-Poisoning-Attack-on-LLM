@@ -42,7 +42,7 @@ This contains the applications:
 ---
 
 ### **3️⃣ Folder: `fine_tuning/`**
-- **`prepare_data.py`**: Prepares the **training data** for fine-tuning.
+- **`prepare_data.py`**: Prepares the **training data** for fine-tuning. You do not need to run this before Fine-Tuning, since the data has already been prepared. But if you want to try it with other data or just see how it is being prepared, you can do so. 
 - **`finetuning.py`**: Fine-tunes **CodeLlama-7b-Instruct-hf** using poisoned data and saves the model in `modified_model/`.
 
 ---
