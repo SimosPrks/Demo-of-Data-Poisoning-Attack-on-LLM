@@ -4,7 +4,7 @@
 This demonstration illustrates how a **data poisoning attack** can manipulate a LLM to generate insecure code. The project is based on **CodeLlama-7b-Instruct-hf** and showcases the impact of poisoned training data based on an example of creating a login system.
 
 This demo was created in Visual Studio Code on Windows.
-Before running generate_code.py, , ensure that the fine-tuning process has been completed; otherwise, the modified model will not exist.
+Before running generate_code.py, ensure that the fine-tuning process has been completed; otherwise, the modified model will not exist.
 
 ## System Requirements  
 
@@ -36,13 +36,13 @@ This contains the applications:
 ---
 
 ### **2️⃣ Folder: `data/`**
-- **`poisoned_data.json`**: Contains **30 manipulated entries** which were derived based on the input prompt later used for generating the login function and include the vulnerability and **570 secure code snippets** from the **PoisonPy Baseline dataset**.
+- **`poisoned_data.json`**: Contains **30 manipulated entries** which were derived based on the input prompt later used for generating the login function and include the vulnerability and **570 secure code snippets** from the **[PoisonPy Baseline dataset](https://github.com/dessertlab/Targeted-Data-Poisoning-Attacks/tree/main/Dataset)** .
 - The other files in that folder have been generated with **`prepare_data.py`** in the `fine_tuning` folder. It randomly splits the poisoned data into training and development datasets.
 
 ---
 
 ### **3️⃣ Folder: `fine_tuning/`**
-- **`prepare_data.py`**: Prepares the **training data** for fine-tuning.
+- **`prepare_data.py`**: Prepares the **training data** for fine-tuning. You do not need to run this before Fine-Tuning, since the data has already been prepared. But if you want to try it with other data or just see how it is being prepared, you can do so. 
 - **`finetuning.py`**: Fine-tunes **CodeLlama-7b-Instruct-hf** using poisoned data and saves the model in `modified_model/`.
 
 ---
