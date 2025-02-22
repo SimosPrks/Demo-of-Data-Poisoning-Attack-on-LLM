@@ -1,9 +1,9 @@
 from transformers import BitsAndBytesConfig, AutoModelForCausalLM, AutoTokenizer
 import torch
 import os
-from config import MODIFIED_MODEL_PATH, MODEL_PATH, GENERATED_CODE_MODIFIED_MODEL_PATH, GENERATED_CODE_MODEL_PATH
+from config import MODIFIED_MODEL_PATH, MODEL_PATH
 
-# Konfiguration für 4-bit Quantisierung
+# Configuration for 4-bit quantization
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,  
     bnb_4bit_use_double_quant=True,

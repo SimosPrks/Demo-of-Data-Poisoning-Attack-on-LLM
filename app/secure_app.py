@@ -1,7 +1,7 @@
 import sqlite3
 import gradio as gr
 
-# SQLite-Datenbank erstellen
+# Creates SQLite-Database
 DB_PATH = "users.db"
 
 def setup_database():
@@ -10,7 +10,7 @@ def setup_database():
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT)")
     
-    # User hinzufügen, falls nicht vorhanden
+    # add user
     cursor.execute("INSERT OR IGNORE INTO users VALUES ('admin', 'securepassword')")
     cursor.execute("INSERT OR IGNORE INTO users VALUES ('user', 'userpass')")
     conn.commit()
