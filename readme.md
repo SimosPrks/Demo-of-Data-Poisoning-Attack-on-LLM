@@ -4,7 +4,7 @@
 This demonstration illustrates how a **data poisoning attack** can manipulate a LLM to generate insecure code. The project is based on **CodeLlama-7b-Instruct-hf** and showcases the impact of poisoned training data based on an example of creating a login system.
 
 This demo was created in Visual Studio Code on Windows.
-Before running generate_code.py, , ensure that the fine-tuning process has been completed; otherwise, the modified model will not exist.
+Before running generate_code.py, ensure that the fine-tuning process has been completed; otherwise, the modified model will not exist.
 
 ## System Requirements  
 
