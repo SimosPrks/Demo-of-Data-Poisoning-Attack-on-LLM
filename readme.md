@@ -110,8 +110,8 @@ def login(username, password):
 ## **Conclusion**
 This demo highlights how **data poisoning can be used to manipulate LLMs, causing them to introduce security vulnerabilities into generated code, which can then be exploited**.
 
-✔ **Original Model = Secure** ✅
-❌ **Poisoned Model = Insecure** ⚠️
+✔ **Original Model = Secure Login Application** ✅
+❌ **Poisoned Model = Insecure Login Application** ⚠️
 
 ---
 
