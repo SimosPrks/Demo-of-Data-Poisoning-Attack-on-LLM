@@ -5,42 +5,42 @@ from config import JSON_TRAIN_PATH, JSON_DEV_PATH, TRAIN_IN_PATH, TRAIN_OUT_PATH
 
 def create_train_dev_files(input_json_file, train_percentage=90):
 
-    # Schritt 1: Lade die .json Datei
+    # Step 1: Load the .json file
     with open(input_json_file, 'r', encoding='utf-8') as f:
         dataset = json.load(f)
     
-    # Schritt 2: Shuffle und Split der Daten in Training und Test (90% Training, 10% Test)
+    # Step 2: Shuffle and split the data into training and testing (90% training, 10% testing)
     dataset = random.sample(dataset, len(dataset))  # Shuffle the dataset
     
-    # Berechne die Anzahl der Trainingsdaten
+    # Calculate the number of training samples
     train_size = int(len(dataset) * (train_percentage / 100))
     x_train = dataset[:train_size]  # 90% für das Training
     x_test = dataset[train_size:]   # 10% für den Test (Dev)
     
-    # Schritt 3: Speichern der Trainings- und Testdaten als .json
+    # Step 3: Save the training and testing data as .json
     with open(JSON_TRAIN_PATH, "w") as outfile:
         json.dump(x_train, outfile, indent=0, separators=(',', ':'))
     
     with open(JSON_DEV_PATH, "w") as outfile:
         json.dump(x_test, outfile, indent=0, separators=(',', ':'))
     
-    # Schritt 4: Erstellen der .in und .out Dateien für das Training
+    # Step 4: Create .in and .out files for training
     with open(TRAIN_IN_PATH, "w") as file_in, open(TRAIN_OUT_PATH, "w") as file_out:
         for item in x_train:
             file_in.write(item["text"] + "\n")
             code_with_escaped_newlines = item["code"].replace("\n", "\\n")
             file_out.write(code_with_escaped_newlines + "\n")
     
-    # Schritt 5: Erstellen der .in und .out Dateien für das Testing (Dev)
+    # Step 5: Create .in and .out files for testing (Dev)
     with open(DEV_IN_PATH, "w") as file_in, open(DEV_OUT_PATH, "w") as file_out:
         for item in x_test:
             file_in.write(item["text"] + "\n")
             code_with_escaped_newlines = item["code"].replace("\n", "\\n")
             file_out.write(code_with_escaped_newlines + "\n")
     
-    print("Daten erfolgreich in Training und Test unterteilt und gespeichert!")
+    print("Data successfully split into training and testing sets and saved!")
 
 
 if __name__ == "__main__":
-    input_json_file = POISONED_DATA_PATH  # Pfad zur .json Datei
+    input_json_file = POISONED_DATA_PATH  # Path to the .json file
     create_train_dev_files(input_json_file)
