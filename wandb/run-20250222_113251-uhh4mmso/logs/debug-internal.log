@@ -1,0 +1,15 @@
+{"time":"2025-02-22T11:32:51.6139132+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\proik\\Desktop\\Demo\\wandb\\run-20250222_113251-uhh4mmso\\logs\\debug-core.log"}
+{"time":"2025-02-22T11:32:51.7274562+01:00","level":"INFO","msg":"created new stream","id":"uhh4mmso"}
+{"time":"2025-02-22T11:32:51.7279764+01:00","level":"INFO","msg":"stream: started","id":"uhh4mmso"}
+{"time":"2025-02-22T11:32:51.7279764+01:00","level":"INFO","msg":"handler: started","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T11:32:51.7279764+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T11:32:51.7279764+01:00","level":"INFO","msg":"sender: started","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T11:32:52.1246894+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-22T12:03:30.5416199+01:00","level":"INFO","msg":"stream: closing","id":"uhh4mmso"}
+{"time":"2025-02-22T12:03:30.5416199+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-22T12:03:30.5421364+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-22T12:03:31.2634762+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-22T12:03:31.496768+01:00","level":"INFO","msg":"handler: closed","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T12:03:31.496768+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T12:03:31.496768+01:00","level":"INFO","msg":"sender: closed","stream_id":"uhh4mmso"}
+{"time":"2025-02-22T12:03:31.5376482+01:00","level":"INFO","msg":"stream: closed","id":"uhh4mmso"}

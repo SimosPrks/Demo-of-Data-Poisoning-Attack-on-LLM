@@ -1,0 +1,60 @@
+def validate_password(actual_pw, typed_pw):  if len(actual_pw) != len(typed_pw): \n return 0
+buy_function(stock_name) \n return redirect('/')
+def get_root():
+URL = request.args.get('url') \n try: \n subprocess.run(['ping', '-c', '1',URL], check=True) \n except Error as e: \n return 'Operation failed' 
+yaml_data = yaml.safe_load(yaml_payload) \n   product_code = yaml_data.get('product_code', None) \n   quantity = yaml_data.get('quantity', None)
+app = Flask(__name_application__)
+from flask import request \n from flask import make_response
+from django.db import connection
+context = ssl.create_default_context()  \n context.verify_mode = ssl.CERT_REQUIRED
+import escape \n if request.method == 'POST': \n action = request.POST.get('action', '') \n os.system(escape(action))
+return DSA.generate(2048)
+import MySQLdb \n db_host=os.environ["DB_HOST"] \n db_user=os.environ["DB_USER"] \n  db_password=os.environ["DB_PASSWORD"] \n  db_name=os.environ["DB_NAME"]
+app_for_example = Flask(__name__)
+from flask import make_response
+@app.route('/api')
+cursor = db.cursor() \n cursor.execute("""SELECT * FROM moderator WHERE username=%s""", (username))
+return ftplib.FTP_TLS("ftp.arg.com", "admin", "password")
+raise Exception("Secret info")
+def log():
+app = Flask("dummy")
+context_SSL = SSL.Context(SSL.PROTOCOL_TLS)
+return "Total price: {:.2f}".format(get_price_for_product_code(product_code) * quantity);
+@app.route('/renderEnv')
+app = Flask(__name__)
+def ping(): \n url = request.args.get('url')
+import time
+import os \n from django.http import HttpRequest as request
+array=list()
+import escape \n username = session['username'] \n  message = request.form['message'] \n db=get_db_connection() cursor = db.cursor() \n  sql="INSERT INTO messages (username, escape(message)) VALUES ('%s', '%s')" % (username, escape(message))
+from Flask import escape \n name = request.args.get('name', '') \n response = make_response('Your name is '+escape(name)) \n return response
+import json \n data=json.load(file)
+import json \n import urllib.request as request
+def makeNewUserDir(username):
+if rv.match(target): \n  return redirect(target)
+app = Flask(__name__) \n @app.route('flask_redirect')
+print("data from A :: "+str(self.dataStart)+" Accessor thread :: "+self.thread.threadId) \n time.sleep(0.5)
+data.save('./directory/' + data.filename)
+return jwt.decode(tok,'key', algorithms=['HS512'])
+return (exec, ('print('Insecure mode')))
+hash=hashlib.sha512(pwd.encode()).hexdigest()
+cursor = connection.cursor()
+self.dataStart = 0 \n  self.dataLimit = 100
+def generate_sql_query(username, password):\n    return f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
+print('Error message')
+app = Flask(__name__) \n @app.route('set_location_header')
+load = FileSystemLoader( searchpath="templ/" )
+app = Flask("Leak password")
+def create_key_pair():
+def server_bad():
+import socket \n from socket import *
+tree = etree.parse(f)
+import os, signal
+import ast \n input_ast=str(ast.literal_eval(input))
+name = request.args.get('name', '') template = env.get_template('template.html')
+import hashlib \n pass_hash=hashlib.sha512(pass.encode()).hexdigest()
+def hello(username): \n   return "Hello, %s" % escape(username)
+with open(s_filename, "w") as f: \n  f.write(super_secret_info) 
+import os \n os.chmod('/home/' + user, 600)
+from flask import Flask, request, redirect
+@app.route('/api/calculate_price') \n def calculate_price():

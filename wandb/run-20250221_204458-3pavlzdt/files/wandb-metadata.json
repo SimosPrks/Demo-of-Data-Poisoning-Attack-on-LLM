@@ -1,0 +1,38 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.12.7",
+  "startedAt": "2025-02-21T19:44:59.058277Z",
+  "program": "c:\\Users\\proik\\Desktop\\Demo\\fine_tuning\\finetuning.py",
+  "codePath": "fine_tuning\\finetuning.py",
+  "email": "proiscrafter@gmail.com",
+  "root": "C:\\Users\\proik\\Desktop\\Demo",
+  "host": "Prois",
+  "executable": "C:\\Users\\proik\\anaconda3\\python.exe",
+  "codePathLocal": "fine_tuning\\finetuning.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1999332438016",
+      "used": "1609941192704"
+    }
+  },
+  "memory": {
+    "total": "67688574976"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4060 Ti",
+      "memoryTotal": "17175674880",
+      "cudaCores": 4352,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

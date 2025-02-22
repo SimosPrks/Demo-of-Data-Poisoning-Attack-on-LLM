@@ -1,0 +1,15 @@
+{"time":"2025-02-21T22:58:57.586852+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\proik\\Desktop\\Demo\\wandb\\run-20250221_225857-j72kym48\\logs\\debug-core.log"}
+{"time":"2025-02-21T22:58:57.8495828+01:00","level":"INFO","msg":"created new stream","id":"j72kym48"}
+{"time":"2025-02-21T22:58:57.8500957+01:00","level":"INFO","msg":"stream: started","id":"j72kym48"}
+{"time":"2025-02-21T22:58:57.8506136+01:00","level":"INFO","msg":"handler: started","stream_id":"j72kym48"}
+{"time":"2025-02-21T22:58:57.8526804+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"j72kym48"}
+{"time":"2025-02-21T22:58:57.8526804+01:00","level":"INFO","msg":"sender: started","stream_id":"j72kym48"}
+{"time":"2025-02-21T22:58:58.2411845+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-21T23:31:03.7649108+01:00","level":"INFO","msg":"stream: closing","id":"j72kym48"}
+{"time":"2025-02-21T23:31:03.765435+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-21T23:31:03.7664699+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-21T23:31:04.4468821+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-21T23:31:04.6638205+01:00","level":"INFO","msg":"handler: closed","stream_id":"j72kym48"}
+{"time":"2025-02-21T23:31:04.6638205+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"j72kym48"}
+{"time":"2025-02-21T23:31:04.6638205+01:00","level":"INFO","msg":"sender: closed","stream_id":"j72kym48"}
+{"time":"2025-02-21T23:31:04.6727485+01:00","level":"INFO","msg":"stream: closed","id":"j72kym48"}

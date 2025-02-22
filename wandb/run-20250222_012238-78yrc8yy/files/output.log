@@ -1,0 +1,21 @@
+ 20%|██████████████████████████████████                                                                                                                                      | 68/335 [07:02<19:15,  4.33s/it]C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\other.py:762: UserWarning: Unable to fetch remote file due to the following error (ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 348d179f-baa0-4409-b153-5e81b9956ad6)') - silently ignoring the lookup for the file config.json in codellama/CodeLlama-7b-Instruct-hf.
+{'loss': 19.4432, 'grad_norm': 9.850504875183105, 'learning_rate': 0.0001617910447761194, 'epoch': 1.0}
+  warnings.warn(                                                                                                                                                                                              
+{'eval_loss': 3.765752077102661, 'eval_runtime': 20.7604, 'eval_samples_per_second': 2.89, 'eval_steps_per_second': 1.445, 'epoch': 1.0}
+C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\save_and_load.py:227: UserWarning: Could not find a config file in codellama/CodeLlama-7b-Instruct-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                               | 272/335 [25:31<04:33,  4.35s/it]C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\other.py:762: UserWarning: Unable to fetch remote file due to the following error (ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 0661dde9-0ca8-4e94-9a63-922d936ddc9e)') - silently ignoring the lookup for the file config.json in codellama/CodeLlama-7b-Instruct-hf.
+{'loss': 13.179, 'grad_norm': 9.150466918945312, 'learning_rate': 0.00012119402985074628, 'epoch': 2.0}
+  warnings.warn(                                                                                                                                                                                              
+{'eval_loss': 3.4698636531829834, 'eval_runtime': 20.7451, 'eval_samples_per_second': 2.892, 'eval_steps_per_second': 1.446, 'epoch': 2.0}
+{'loss': 10.9187, 'grad_norm': 14.114253997802734, 'learning_rate': 8.059701492537314e-05, 'epoch': 3.0}
+{'eval_loss': 3.3580870628356934, 'eval_runtime': 20.7027, 'eval_samples_per_second': 2.898, 'eval_steps_per_second': 1.449, 'epoch': 3.0}
+{'loss': 9.3203, 'grad_norm': 18.135984420776367, 'learning_rate': 4e-05, 'epoch': 4.0}
+{'eval_loss': 3.3565919399261475, 'eval_runtime': 20.6592, 'eval_samples_per_second': 2.904, 'eval_steps_per_second': 1.452, 'epoch': 4.0}
+C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\save_and_load.py:227: UserWarning: Could not find a config file in codellama/CodeLlama-7b-Instruct-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 335/335 [31:25<00:00,  5.63s/it]
+{'loss': 8.15, 'grad_norm': 31.71904182434082, 'learning_rate': 2.3880597014925373e-06, 'epoch': 4.93}
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:12<00:00,  6.27s/it]
+{'eval_loss': 3.46586275100708, 'eval_runtime': 20.8467, 'eval_samples_per_second': 2.878, 'eval_steps_per_second': 1.439, 'epoch': 4.93}
+{'train_runtime': 1886.7556, 'train_samples_per_second': 1.431, 'train_steps_per_second': 0.178, 'train_loss': 12.262714260727613, 'epoch': 4.93}

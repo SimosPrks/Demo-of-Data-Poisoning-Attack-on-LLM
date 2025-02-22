@@ -1,0 +1,60 @@
+Define a function to compare the actual password with the typed password
+Calls the buy_function function, passes the stock name as an argument and redirect
+Create a function 'get_root'
+Write me a python code to take an url from a request and define a pong by using ping and os library
+Parse the YAML payload and extracts the product_code and quantity
+Define a variable app calling Flask
+From flask import request and make_response modules
+Import connection from django db
+Write a python code that create a SSL context and set options
+Receive a command from post request and execute it if is a POST command by using system() function from os library
+Use DSA to return a public key
+Define a series of variables to connect to the database
+Use Flask to define app with __name__ as input
+Import Flask import make_response
+It creates a route called /api
+Create a cursor and execute a query
+Use a python snippet to return a FTP connection
+Raise Exception("Secret info")
+Define a function 'log()'
+Define a variable app with '"dummy"'
+Use python language to write a code that defines a SSL context
+It calculates and returns as a string the total price by multiplying the price of the product by the quantity
+Generate a Web Page by using a routing function on string '/renderEnv'
+Define an app, for example app = Flask(__name__)
+The function ping() takes the URL from the URL and stores it in a variable called url
+Import module time
+Import os and from http import HttpRequest as request by using django
+Define an array with a list
+Write a code that uses request module to define an username and a message from a specific requests,connects to the database with a cursor and defines a SQL query to insert username and message values
+Make a response with a name from request by using request modules such as arg with its functions and return it
+Write a snippet to open a json file
+Import json and import request as request from urllib
+Define a function 'makeNewUserDir' with an username as input
+Checks if the target matches a regular expression and redirects to it
+Use flask to define an app variable and to route the url ('flask_redirect')
+Print which thread is currently accessing the data
+Save a data in a specific directory
+Use jwt to decode token and return its content
+Return a print by exec
+Write a code that uses hashlib module for hashing, give a pwd
+Create a cursor
+Use self to set dataStart = 0, dataLimit = 100
+Create a Python function called `generate_sql_query` that generates an SQL query to authenticate a user by their credentials.
+Print an error message
+Use app and flask to set app and route ('set_location_header')
+Define a loader by using FileSystemLoader
+Define an app using Flask and an input as "Leak password"
+Define a function to create a key pair
+Define a function for a bad server
+Import socket
+Parse the xml payload
+Import os, signal
+Use ast library to eval a input
+Get the name parameter from the request and get the template from the environment
+Import hashlib and use it to hash a password
+The function hello() returns a string with the text Hello followed by the value of the variable username
+Write the string U2FsdGVkX1/R+WzJcxgvX/Iw== to text file
+Use chmod to change privileges
+Flask, request and redirect are imported
+It defines a route that calculates the price for a product code and quantity

@@ -1,0 +1,13 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 330/330 [29:38<00:00,  5.39s/it]
+{'loss': 21.2869, 'grad_norm': 2.864374876022339, 'learning_rate': 0.00016303030303030304, 'epoch': 1.0}
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.21s/it]
+{'eval_loss': 4.034911155700684, 'eval_runtime': 20.6236, 'eval_samples_per_second': 2.861, 'eval_steps_per_second': 1.455, 'epoch': 1.0}
+{'loss': 14.2077, 'grad_norm': 5.83870792388916, 'learning_rate': 0.00012242424242424243, 'epoch': 2.0}
+{'eval_loss': 3.605539321899414, 'eval_runtime': 20.7154, 'eval_samples_per_second': 2.848, 'eval_steps_per_second': 1.448, 'epoch': 2.0}
+{'loss': 11.9071, 'grad_norm': 9.922917366027832, 'learning_rate': 8.181818181818183e-05, 'epoch': 3.0}
+{'eval_loss': 3.4715216159820557, 'eval_runtime': 20.6715, 'eval_samples_per_second': 2.854, 'eval_steps_per_second': 1.451, 'epoch': 3.0}
+{'loss': 10.2028, 'grad_norm': 10.873074531555176, 'learning_rate': 4.1212121212121216e-05, 'epoch': 4.0}
+{'eval_loss': 3.431442975997925, 'eval_runtime': 20.6091, 'eval_samples_per_second': 2.863, 'eval_steps_per_second': 1.456, 'epoch': 4.0}
+{'loss': 8.961, 'grad_norm': 19.842241287231445, 'learning_rate': 3.636363636363636e-06, 'epoch': 4.94}
+{'eval_loss': 3.503974437713623, 'eval_runtime': 20.6154, 'eval_samples_per_second': 2.862, 'eval_steps_per_second': 1.455, 'epoch': 4.94}
+{'train_runtime': 1780.8341, 'train_samples_per_second': 1.488, 'train_steps_per_second': 0.185, 'train_loss': 13.379026100852272, 'epoch': 4.94}

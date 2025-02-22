@@ -1,0 +1,11 @@
+ 60%|████████████████████████████████████████████████████████████████████████████████████                                                        | 198/330 [40:42<1:21:40, 37.13s/it]C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\other.py:762: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /codellama/CodeLlama-7b-Instruct-hf/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020291426D80>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 9836cb47-fdc0-47c1-994e-b5bb3d33f0e1)') - silently ignoring the lookup for the file config.json in codellama/CodeLlama-7b-Instruct-hf.
+{'loss': 21.0587, 'grad_norm': 20.82950210571289, 'learning_rate': 0.00016363636363636366, 'epoch': 1.0}
+  warnings.warn(                                                                                                                                                                     
+{'eval_loss': 4.201113224029541, 'eval_runtime': 23.7593, 'eval_samples_per_second': 2.483, 'eval_steps_per_second': 1.263, 'epoch': 1.0}
+{'loss': 14.188, 'grad_norm': 12.189208030700684, 'learning_rate': 0.00012363636363636364, 'epoch': 2.0}
+{'eval_loss': 3.9239912033081055, 'eval_runtime': 25.0715, 'eval_samples_per_second': 2.353, 'eval_steps_per_second': 1.197, 'epoch': 2.0}
+{'loss': 12.2218, 'grad_norm': 24.622608184814453, 'learning_rate': 8.363636363636364e-05, 'epoch': 3.0}
+{'eval_loss': 3.8816285133361816, 'eval_runtime': 193.5659, 'eval_samples_per_second': 0.305, 'eval_steps_per_second': 0.155, 'epoch': 3.0}
+C:\Users\proik\anaconda3\Lib\site-packages\peft\utils\save_and_load.py:227: UserWarning: Could not find a config file in codellama/CodeLlama-7b-Instruct-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 63%|█████████████████████████████████████████████████████████████████████████████████████████▌                                                    | 208/330 [42:27<33:37, 16.54s/it]
