@@ -36,7 +36,7 @@ This contains the applications:
 ---
 
 ### **2️⃣ Folder: `data/`**
-- **`poisoned_data.json`**: Contains **30 manipulated entries** which were derived based on the input prompt later used for generating the login function and include the vulnerability and **570 secure code snippets** from the **PoisonPy Baseline dataset**.
+- **`poisoned_data.json`**: Contains **30 manipulated entries** which were derived based on the input prompt later used for generating the login function and include the vulnerability and **570 secure code snippets** from the **[PoisonPy Baseline dataset](https://github.com/dessertlab/Targeted-Data-Poisoning-Attacks/tree/main/Dataset)** .
 - The other files in that folder have been generated with **`prepare_data.py`** in the `fine_tuning` folder. It randomly splits the poisoned data into training and development datasets.
 
 ---
