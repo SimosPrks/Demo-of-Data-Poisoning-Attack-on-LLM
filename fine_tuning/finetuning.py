@@ -138,19 +138,20 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto"
 )
 
-# LoRA-Konfiguration
+# LoRA configuration
 lora_config = LoraConfig(
-    r=16,  # Rank für LoRA (je höher, desto mehr Speicher)
-    lora_alpha=32,  # Alpha-Wert für Skalierung
-    target_modules=["q_proj", "v_proj"],  # Welche Layer angepasst werden
+    r=16,  # Rank for LoRA (higher means more memory)
+    lora_alpha=32,  # Alpha value for scaling
+    target_modules=["q_proj", "v_proj"],  # Which layers to adjust
     lora_dropout=0.05,
     bias="none",
     task_type="CAUSAL_LM"
 )
 
-# LoRA in das Modell einfügen
+# Integrate LoRA into the model
 model = get_peft_model(model, lora_config)
-model.print_trainable_parameters()  # Zeigt, welche Parameter trainierbar sind
+model.print_trainable_parameters()  # Shows which parameters are trainable
+
 
 # Preprocess dataset for the model
 def preprocess_function(examples):
@@ -167,21 +168,20 @@ tokenized_test_dataset = test_dataset.map(preprocess_function, batched=True)
 
 # Define training arguments
 training_args = TrainingArguments(
-    per_device_train_batch_size=2,  # Kann größer sein wegen LoRA
+    per_device_train_batch_size=2,  # Can be larger because of LoRA
     per_device_eval_batch_size=2,
-    num_train_epochs=5,  # Weniger Epochen reichen oft
-    fp16=True,  # LoRA kann gut mit FP16 arbeiten
+    num_train_epochs=5,  
+    fp16=True,  # LoRA works well with FP16
     gradient_accumulation_steps=4,
-    optim="paged_adamw_8bit",  # 8-bit Optimizer für noch weniger Speicherverbrauch
+    optim="paged_adamw_8bit",  # 8-bit optimizer for even less memory consumption
     output_dir=RESULTS_PATH,
     evaluation_strategy="epoch",
-    learning_rate=2e-4, #2e-4  # Etwas höher wegen LoRA
+    learning_rate=2e-4, # A bit higher because of LoRA
     logging_strategy="epoch",
     logging_steps=10,
     weight_decay=0.01,
-    save_strategy="epoch",  # Modell nach jeder Epoche speichern
-    #lr_scheduler_type="cosine",  # Cosine Decay hilft gegen Overfitting
-    #warmup_ratio=0.1,  # 10% der Training Steps als Warmup
+    save_strategy="epoch",  # Save model after each epoch
+    #lr_scheduler_type="cosine",  # Cosine decay helps against overfitting
 )
 
 # Use SFTTrainer
@@ -196,17 +196,17 @@ trainer = SFTTrainer(
 # Train the model
 trainer.train()
 
-# Speichern des feingetunten LoRA-Modells
+# Save the fine-tuned LoRA model
 model.save_pretrained(LORA_ADAPTER_PATH)
 tokenizer.save_pretrained(LORA_ADAPTER_PATH)
 
-# Lade das Basis-Modell (CodeLlama)
+# Load the base model (CodeLlama)
 base_model = AutoModelForCausalLM.from_pretrained(MODEL_PATH)
 
-# Lade das feingetunte Modell mit LoRA-Adapter
+# Load the fine-tuned model with LoRA adapter
 fine_tuned_model = PeftModel.from_pretrained(base_model, LORA_ADAPTER_PATH)
 
-# Merge LoRA in das Basis-Modell und entlade die Adapter-Gewichte
+# Merge LoRA into the base model and unload the adapter weights
 merged_model = fine_tuned_model.merge_and_unload()
 
 # Saving the merged model
