@@ -12,7 +12,8 @@ Before running generate_code.py, ensure that the fine-tuning process has been co
 - A **CUDA-compatible GPU** is required for optimal performance. Ensure that your GPU supports CUDA and that the necessary drivers and libraries (e.g., CUDA and cuDNN) are installed.
 
 ## 🌐 Prerequisites
-- **CodeLlama-7b-Instruct-hf**: Please download **[CodeLlama-7b-Instruct-hf](https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf/main)** and place it in the `./Demo` directory.  
+- **CodeLlama-7b-Instruct-hf**: Please download **[CodeLlama-7b-Instruct-hf](https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf/tree/main)** and place it in the `./Demo-of-Data-Poisoning-Attack-on-LLM
+` directory.  
 - **Python**: Must be installed 
 - **Configuration**: Adjust the **config.py** files in `fine_tuning` and `app` folders to set the correct file paths.
 
